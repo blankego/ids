@@ -1,0 +1,7 @@
+encode=UTF-8
+name=夷微
+key=abcdefghijklmnopqrstuvwxyz;/{}[]
+len=4
+wildcard=?
+match=0
+[DATA]

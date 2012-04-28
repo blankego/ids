@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="zh">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>IDS 偏旁檢字</title>
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/splitter.js"></script>
+    <script type="text/javascript" src = "js/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style/ids_ui.css" />
+    <script type='text/javascript' src="js/$ui.js"></script>
+    <script type='text/javascript' src="ids.js"></script>
+    <script type='text/javascript' src="js/ids_ui.js"></script>
+</head>
+<body >
+<div id = "tabs">
+    <ul class="tabs">
+       <li><a title="#dashboard">Dashboard</a></li>
+
+       <li><a title="#help">Help</a></li>
+    </ul>
+
+    <div class="tab_container">
+		
+    <div id="dashboard" class="tab_content">
+		<div id="splitter">
+			<div id="divide" class="panel">
+				<div class="panel_caption">拆字： 
+				</div>
+				<div class="panel_content">
+					<input type="text" class="reader" id="charInput"/>
+					<div id="charTree">
+					</div>
+				</div>
+			</div>
+			<div id="combine" class="panel">
+				<div class="panel_caption">組字：
+				
+				</div>
+				<div class="panel_content">
+					<input type="text" class="reader" id="partsInput"/>
+					<select id="formType">
+						<option value="comps">偏旁</option>
+						<option value="ids">IDS</option>
+						
+					</select>
+					<div id="charTable">
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+   
+    <div id="help" class="tab_content">
+    <h2>使用方法：</h2>
+        <p>
+        To be added!
+        
+        </p>
+    </div>
+        
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,137 @@
+### File header must not be modified
+### This file must be encoded into UTF-8.
+### This file comes from http://www.chinesecj.com
+SCIM_Generic_Table_Phrase_Library_TEXT
+VERSION_1_0
+
+### Begin Table definition.
+BEGIN_DEFINITION
+
+### An unique id to distinguish this table among others.
+### Use uuidgen to generate this kind of id.
+UUID = a12d7bc0-36bd-11e1-88eb-b351bfb78ba8
+
+### A unique number indicates the version of this file.
+### For example the last modified date of this file.
+### This number must be less than 2^32.
+SERIAL_NUMBER = 20120104
+
+ICON = @SCIM_ICONDIR@/CangJie.png
+
+### The default name of this table
+NAME = Imp
+
+### The local names of this table 
+NAME.zh_CN = 夷微
+NAME.zh_TW = 夷微
+NAME.zh_HK = 夷微
+
+### Supported languages of this table
+LANGUAGES = zh_TW,zh_HK,zh_CN,zh_SG
+
+### Prompt string to be displayed in the status area.
+STATUS_PROMPT = 中
+
+### The Keyboard Layout used by this table. Unset or set to "Unknown" to accept any kind of layouts.
+KEYBOARD_LAYOUT = Unknown
+
+### If true then the first candidate phrase
+### will be selected automatically during inputing.
+AUTO_SELECT = TRUE
+
+### If true then a multi wildcard will be appended
+### at the end of inputing string automatically.
+AUTO_WILDCARD = TRUE
+
+### If true then the result string will be committed to client automatically.
+### This should be used with AUTO_SELECT = TRUE.
+AUTO_COMMIT = TRUE
+
+### If true then the key will be splitted during inputing automatically.
+AUTO_SPLIT = TRUE
+
+### If true then the phrases' frequencies will be adjusted dynamically.
+DYNAMIC_ADJUST = FALSE 
+
+### If true then the preedit area will be filled up by the current candidate phrase automatically.
+AUTO_FILL = TRUE
+
+### If true then the lookup table will always be shown if there is any candidate phrase.
+### Otherwise the lookup table won't be shown unless the user requires it by moving the preedit caret left.
+ALWAYS_SHOW_LOOKUP = TRUE
+
+### Use full width punctuation by default
+DEF_FULL_WIDTH_PUNCT = TRUE
+
+### Use full width letter by default
+DEF_FULL_WIDTH_LETTER = FALSE
+
+### The maxmium length of a key.
+MAX_KEY_LENGTH = 4
+
+### Valid input chars.
+VALID_INPUT_CHARS = abcdefghijklmnopqrstuvwxyz[]{}/;
+
+### Single wildcard char, can have multiple chars.
+### SINGLE_WILDCARD_CHAR = *
+
+### Multi wildcard char.
+MULTI_WILDCARD_CHAR = *
+
+### The key strokes to split inputted string.
+SPLIT_KEYS = quoteright
+
+### The key strokes to commit the convert result to client.
+COMMIT_KEYS = space
+
+### The keys to forward the inputted string to client.
+FORWARD_KEYS = Return
+
+### The key strokes to select phrases
+SELECT_KEYS = 1,2,3,4,5,6,7,8,9,0
+
+### The key strokes to page up the lookup table.
+PAGE_UP_KEYS = Page_Up,comma,minus
+
+### The key strokes to page down.
+PAGE_DOWN_KEYS = Page_Down,period,equal
+
+### Define the prompts of each valid input char.
+BEGIN_CHAR_PROMPTS_DEFINITION
+a 一
+b 土
+c 王
+d 扌
+e 艹
+f 木
+g 石
+h 糸
+i 虫
+j 口
+k 日
+l 目
+m 𥫗
+n 亻
+o 八
+p 金
+q 月
+r 魚
+s 言
+t 疒
+u 忄
+v 氵
+w 辶
+x 马
+y 阝
+; 女
+{ 『
+} 』
+z 匚
+[ 「
+] 」
+/ ／
+END_CHAR_PROMPTS_DEFINITION
+END_DEFINITION
+
+### Begin Table data.
+BEGIN_TABLE
