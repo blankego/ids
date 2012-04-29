@@ -22,7 +22,7 @@
         else
             this.isElement = true;
         if(parent)this.parent = parent;
-    }
+    };
     
     CharTree.prototype.toggle=function(open)
     {
@@ -74,13 +74,12 @@
 			}
         }
         this.children.slideDown();
-    }
+    };
     IdsUi = function()
     {
 		var me = this;
-        var tabs = new $ui.Tabs($("#tabs"));
-        this.divide = new $ui.Panel($("#divide"));
-        this.combine = new $ui.Panel($("#combine"));
+        var tabs = $("#tabs").tTabs();
+        var splitter = $('#splitter').tSplitter({leftWidth:"50%"});
         var chTable = $('#charTable');
         var formType = $('#formType');
         var ch,ciStr;
@@ -115,7 +114,8 @@
                         cl = Ids.getCharsByParts(piStr);
                     }
                     chTable.empty();
-                    _.each(cl,function(c){chTable.append($('<span class="ch">'+c +'</span>'));});
+                    chTable.text(cl.join(','));
+                    //_.each(cl,function(c){chTable.append($('<span class="ch">'+c +'</span>'));});
                 }
             });
         

@@ -207,7 +207,7 @@ function initIds(cb){
             }
      
         }
-        catch(e if e instanceof RangeError)
+        catch(e)// if e instanceof RangeError)
         {
             //alert("Ill formed ids: " + form);
             return undefined;
@@ -224,7 +224,7 @@ function initIds(cb){
     
     Ids.getCharsByParts = function()
     {
-        var res = []
+        var res = [];
         var argc = arguments.length;
         if(argc == 0)return res;
             
@@ -250,22 +250,22 @@ function initIds(cb){
     Idsdata.init = function()
     {
         var els = cjk.str2CharList(Idsdata.elements);
-        Idsdata.elements={}
+        Idsdata.elements={};
         for(var i=0;i<els.length;i++)
             Idsdata.elements[els[i]] = true;
         
-        if(window.localStorage && window.JSON)
+       /* if(window.localStorage && window.JSON)
         {
             localStorage.setItem('Idsdata.version',Idsdata.version);
             localStorage.setItem('Idsdata.compounds',JSON.stringify(Idsdata.compounds));
             localStorage.setItem('Idsdata.elements',JSON.stringify(Idsdata.elements));
             localStorage.setItem('Idsdata.parts',JSON.stringify(Idsdata.parts));
-        }
+        }*/
         Idsdata.init2();
     };
     Idsdata.init2 = function()
     {
-        Idsdata.ids2char={}
+        Idsdata.ids2char={};
         for(var k in Idsdata.compounds)
         {
             var form = Idsdata.compounds[k];
@@ -276,10 +276,12 @@ function initIds(cb){
     };
     
     (function DoInitStuff(){
-        function loaddata()
+        Idsdata.init();
+       /* function loadData()
         {
-            script = document.createElement("script");
+            var script = document.createElement("script");
             script.setAttribute('type','text/javascript');
+            script.setAttribute('charset','UTF-8');
             script.setAttribute('src','js/idsdata.js');
             document.body.appendChild(script);
             
@@ -300,14 +302,14 @@ function initIds(cb){
                     return;
                 }
             }
-            loaddata();
+            loadData();
             
             
         }
         else
         {
-            loaddata();
-        }
+            loadData();
+        }*/
     })();
 
 };
