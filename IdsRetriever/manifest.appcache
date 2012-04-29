@@ -1,0 +1,23 @@
+CACHE MANIFEST
+# 2012-04-28:v1.01
+
+# Explicitly cached entries
+js/idsdata.js
+ids.js
+js/ids_ui.js
+js/jquery-1.7.1.min.js
+style/jquery.tidgets.css
+js/jquery.tidgets.js
+js/underscore-min.js
+index.html
+
+# offline.html will be displayed if the user is offline
+FALLBACK:
+
+
+# All other resources (e.g. sites) require the user to be online.
+NETWORK:
+*
+
+# Additional resources to cache
+CACHE:
