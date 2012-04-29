@@ -152,8 +152,8 @@
     padding:0px;
     margin: 0px;
     position: relative;
-    top:0px;
-    bottom: 10px;
+    /*top:0px;
+    bottom: 10px;*/
     right: 0px;
     overflow: auto;
     min-height: 250px;
